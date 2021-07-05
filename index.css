@@ -10,6 +10,7 @@ body {
 
 h1, h2 {
     font-weight: 300;
+    margin: 0;
 }
 
 h1 {
@@ -18,15 +19,21 @@ h1 {
 
 h2 {
     font-size: 42px;
+    border-top: #c4c4c4 1px solid;
+    border-bottom: #c4c4c4 1px solid;
+    padding: 25px 0;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 36px;
     font-weight: 900;
+    margin-bottom: 0;
 }
 
 .small-text {
     font-size: 16px;
+    margin-top: 0;
 }
 
 
@@ -45,8 +52,12 @@ img:hover {
     transform: scale(1.01);
 }
 
-h1 span, h2 span {
-    font-weight: bold;
+h1 span, 
+h2 span,
+.name, 
+time {
+    font-weight: 900;
+    color: #99D930;
 }
 
 a {
@@ -58,7 +69,7 @@ a:hover, a:focus{
     color: #131313;;
 }
 header, section {
-    padding: 50px 0;;
+    padding: 100px 0;;
 }
 
 header {
@@ -66,7 +77,8 @@ header {
 }
 
 .section-one {
-    background-color: #FFEAEA;
+    /* background-color: #FFEAEA; */
+    background-color: #fff;
 }
 
 .section-two {
@@ -76,4 +88,26 @@ header {
 header, .section-two {
     background-color: #252525;
     color: #fff;
-}]
+}
+
+
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #99D930;
+    color: #252525;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #252525;
+    color: #fff;
+    border: #99D930 2px solid;
+}
+
+
